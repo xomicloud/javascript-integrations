@@ -36,16 +36,19 @@ Now export the environment variables from a terminal...
 source variables.env
 ```
 
-...and run the application:
+...and run the `./googleDrive.js``file:
 
 ```
-npm start
+node ./googleDrive.js
 ```
+
+If all has gone to plan then you should see the meta data for all your Google Drive files and folders echoed to the console.
 
 ## Related links
 
 * [npm - Xomi](https://www.npmjs.com/package/@xomicloud/xomi)
-* [Xomi Developers - JavaScript Integrations](https://developers.xomi.cloud/tutorial/javascript-integrations)
+* [Xomi Developers - Standalone Integrations Tutorial](https://developers.xomi.cloud/tutorial/standalone-integrations)
+* [Xomi Developers - Google Drive Integration Tutorial](https://developers.xomi.cloud/tutorial/google-drive-integration)
 
 ## Contact
 
