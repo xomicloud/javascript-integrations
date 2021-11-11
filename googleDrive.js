@@ -6,11 +6,8 @@ const options = require("./options"),
       Request = require("./request"),
       Response = require("./response");
 
-const q = `parents = 'CVs' and trashed=false`,
-      url = "/google-drive/drive/v3/files",
-      query = {
-        q
-      },
+const url = "/google-drive/drive/v3/files",
+      query = {},
       method = "GET",
       request = new Request(url, query, method),
       response = new Response((body) => {

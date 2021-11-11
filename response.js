@@ -4,26 +4,20 @@ const { Writable } = require("stream");
 
 class Response extends Writable {
   constructor(callback) {
-    super({
-      write,
-      final
-    });
-
-    this.on("error", (error) => {
-      ///
-    });
-
     let body = "";
 
-    function write(data, encoding, done) {
-      body += data;
+    super({
+      write: (data, encoding, done) => {
+        body += data;
 
-      done();
-    }
+        done();
+      },
+      final: () => {
+        callback(body);
+      }
+    });
 
-    function final() {
-      callback(body);
-    }
+    this.on("error", (error) => {});  ///
   }
 }
 
