@@ -2,7 +2,7 @@
 
 ## Introduction
 
-...
+Integrations written in JavaScript.
 
 ## Installation
 
