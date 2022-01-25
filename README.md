@@ -1,7 +1,5 @@
 # JavaScript Integrations
 
-## Introduction
-
 Integrations written in JavaScript.
 
 ## Installation
