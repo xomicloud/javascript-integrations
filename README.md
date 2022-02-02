@@ -2,6 +2,8 @@
 
 Integrations written in JavaScript.
 
+Instructions for getting these up and running locally can be found in the [Google Drive integration tutorial](https://developers.xomi.cloud/tutorial/google-drive-integration) The instructions given below are somewhat brief, the tutorial is your bast bet.
+
 ## Installation
 
 You can clone the repository with [Git](https://git-scm.com/)...
@@ -12,35 +14,7 @@ You can clone the repository with [Git](https://git-scm.com/)...
 
     npm install
 
-## Usage
-
-Before running you will need to configure the application, which requires a corresponding Xomi client. In order to create one, if you have not done so already then create a Xomi [account](https://account.xomi.cloud/). Once you have an account, follow the wizard for creating a client and when prompted fill in the following values, assuming that you want to run the application locally to begin with:
-
-* **Name** Anything you want. This is for internal display within Xomi only.
-
-* **Display name**, **Host** and **Redirect URI** These can all be left blank.
-
-Now create a file to hold the environment variables...
-
-```
-touch variables.env
-```
-
-...and copy the Xomi client's `CLIENT_ID` and `CLIENT_SECRET` environment variables into it. Your client can be found in the [clients](https://account.xomi.cloud/clients) section in your Xomi account. Click on the client name and they will appear in a table near the foot of page.
-
-Now export the environment variables from a terminal...
-
-```
-source variables.env
-```
-
-...and run the `./googleDrive.js``file:
-
-```
-node ./googleDrive.js
-```
-
-If all has gone to plan then you should see the meta data for all your Google Drive files and folders echoed to the console.
+These integrations must be configured before it can be run, which requires a corresponding Xomi client. Again, please see the tutorial.
 
 ## Related links
 
