@@ -2,7 +2,7 @@
 
 Integrations written in JavaScript.
 
-Instructions for getting these up and running locally can be found in the [Google Drive integration tutorial](https://developers.xomi.cloud/tutorial/google-drive-integration) The instructions given below are somewhat brief, the tutorial is your bast bet.
+Instructions for getting these up and running locally can be found in the [Google Drive integration tutorial](https://developers.xomi.cloud/tutorial/google-drive-integration). Please note that the instructions given below are somewhat brief, the tutorial is your bast bet.
 
 ## Installation
 
