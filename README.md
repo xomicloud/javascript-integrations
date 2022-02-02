@@ -45,7 +45,6 @@ If all has gone to plan then you should see the meta data for all your Google Dr
 ## Related links
 
 * [npm - Xomi](https://www.npmjs.com/package/@xomicloud/xomi)
-* [Xomi Developers - Standalone Integrations Tutorial](https://developers.xomi.cloud/tutorial/standalone-integrations)
 * [Xomi Developers - Google Drive Integration Tutorial](https://developers.xomi.cloud/tutorial/google-drive-integration)
 
 ## Contact
