@@ -1,3 +1,5 @@
+"use strict";
+
 const { api } = require("@xomicloud/xomi");
 
 const Request = require("./request"),
