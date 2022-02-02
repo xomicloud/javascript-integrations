@@ -2,9 +2,9 @@
 
 const { api } = require("@xomicloud/xomi");
 
-const options = require("./options"),
-      Request = require("./request"),
-      Response = require("./response");
+const Request = require("./request"),
+      Response = require("./response"),
+      configuration = require("./configuration");
 
 const url = "/google-drive/drive/v3/files",
       query = {},
@@ -14,4 +14,4 @@ const url = "/google-drive/drive/v3/files",
         console.log(body)
       });
 
-api(options, request, response);
+api(configuration, request, response);
