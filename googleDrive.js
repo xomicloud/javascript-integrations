@@ -1,5 +1,3 @@
-"use strict";
-
 const { api } = require("@xomicloud/xomi");
 
 const Request = require("./request"),
@@ -10,8 +8,8 @@ const url = "/google-drive/drive/v3/files",
       query = {},
       method = "GET",
       request = new Request(url, query, method),
-      response = new Response((body) => {
-        console.log(body)
+      response = new Response((content) => {
+        console.log(content);
       });
 
 api(configuration, request, response);
