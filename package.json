@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "@xomicloud/xomi": "^3.0.61"
+    "@xomicloud/xomi": "^3.0.63"
   },
   "devDependencies": {}
 }
