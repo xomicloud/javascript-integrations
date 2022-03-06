@@ -6,10 +6,16 @@ const Request = require("./request"),
       Response = require("./response"),
       configuration = require("./configuration");
 
-const url = "/google-drive/drive/v3/files",
+const url = "/dropbox/2/files/list_folder",
       query = {},
-      method = "GET",
-      request = new Request(url, query, method),
+      method = "POST",
+      headers = {
+        "content-type": "application/json"
+      },
+      content = JSON.stringify({
+        "path": "/CVs"
+      }),
+      request = new Request(url, query, method, headers, content),
       response = new Response((content) => {
         console.log(content);
       });
