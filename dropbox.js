@@ -6,16 +6,17 @@ const Request = require("./request"),
       Response = require("./response"),
       configuration = require("./configuration");
 
-const url = "/dropbox/2/files/list_folder",
+const url = "/dropbox/2/files/download",
       query = {},
       method = "POST",
-      headers = {
-        "content-type": "application/json"
-      },
-      content = JSON.stringify({
-        "path": "/CVs"
+      dropboxAPIArg = JSON.stringify({
+        "path": "/CVs/james_smith.pdf"
       }),
-      request = new Request(url, query, method, headers, content),
+      headers = {
+        "content-type": "application/json",
+        "dropbox-api-arg": dropboxAPIArg
+      },
+      request = new Request(url, query, method, headers),
       response = new Response((content) => {
         console.log(content);
       });
