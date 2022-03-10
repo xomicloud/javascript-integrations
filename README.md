@@ -19,7 +19,7 @@ These integrations must be configured before it can be run, which requires a cor
 ## Related links
 
 * [npm - Xomi](https://www.npmjs.com/package/@xomicloud/xomi)
-* [Xomi Developers - Google Drive Integration Tutorial](https://developers.xomi.cloud/tutorial/google-drive-integration)
+* [Xomi Developers - Dropbox Integration Tutorial](https://developers.xomi.cloud/tutorial/dropbox-integration)
 
 ## Contact
 
