@@ -3,7 +3,7 @@
 const { Readable } = require("stream");
 
 class Request extends Readable {
-  constructor(url, query, method, headers = {}, content = "") {
+  constructor(uri, query, method, headers = {}, content = "") {
     super({
       read: () => {
         this.push(content);
@@ -11,7 +11,7 @@ class Request extends Readable {
       }
     });
 
-    this.url = url;
+    this.uri = uri;
     this.query = query;
     this.method = method;
     this.headers = headers;

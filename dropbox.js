@@ -6,7 +6,7 @@ const Request = require("./request"),
       Response = require("./response"),
       configuration = require("./configuration");
 
-const url = "/dropbox/2/files/list_folder",
+const uri = "/dropbox/2/files/list_folder",
       query = {},
       method = "POST",
       headers = {
@@ -15,7 +15,7 @@ const url = "/dropbox/2/files/list_folder",
       content = JSON.stringify({
         "path": ""
       }),
-      request = new Request(url, query, method, headers, content),
+      request = new Request(uri, query, method, headers, content),
       response = new Response((content) => {
         console.log(content);
       });
