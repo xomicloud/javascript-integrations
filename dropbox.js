@@ -13,7 +13,7 @@ const uri = "/dropbox/2/files/list_folder",
         "content-type": "application/json"
       },
       content = JSON.stringify({
-        "path": ""
+        "path": "/CVs"
       }),
       request = new Request(uri, query, method, headers, content),
       response = new Response((content) => {
